@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: keyword-summarizer
+Version: 0.1.0
+Summary: Summarize text with KeyBERT-based keyword injection and fine-tuned BART models
+Home-page: https://github.com/ValeXpoli/keyword_summarizer
+Author: ValeXpoli
+Author-email: valerioxefteris.vx@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
