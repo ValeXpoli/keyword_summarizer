@@ -36,7 +36,32 @@ pip install git+https://github.com/ValeXpoli/keyword_summarizer.git
 After installing, import and use the main function summarize_with_keywords from the keyword_summarizer package:
 from keyword_summarizer import summarize_with_keywords
 
-<pre> ```python from keyword_summarizer import summarize_with_keywords text_example = ( "Manchester City have been restricted to a net transfer spend of £49m. " "The club also had to keep its overall wage bill to the current level of £205m. " "These punishments were imposed by UEFA for breaching Financial Fair Play rules. " "The spending restrictions apply to this season and the next one, " "but City are confident they will be lifted early after their compliance." ) # Summarize using the single-token approach (VexPoli/distilbart-summarization-top-single) summary_single = summarize_with_keywords( text_example, model_type="single", # "single" or "list" top_n_keywords=5 # Extract 5 keywords ) print("Single-token model summary:\n", summary_single) # Summarize using the multi-token (list) approach (VexPoli/distilbart-summarization-top-list) summary_list = summarize_with_keywords( text_example, model_type="list", top_n_keywords=5 ) print("\nList model summary:\n", summary_list) ``` </pre>
+<pre>from keyword_summarizer import summarize_with_keywords
+
+text_example = (
+    "Manchester City have been restricted to a net transfer spend of £49m. "
+    "The club also had to keep its overall wage bill to the current level of £205m. "
+    "These punishments were imposed by UEFA for breaching Financial Fair Play rules. "
+    "The spending restrictions apply to this season and the next one, "
+    "but City are confident they will be lifted early after their compliance."
+)
+
+# Summarize using the single-token approach (VexPoli/distilbart-summarization-top-single)
+summary_single = summarize_with_keywords(
+    text_example,
+    model_type="single",  # "single" or "list"
+    top_n_keywords=5      # Extract 5 keywords
+)
+print("Single-token model summary:\n", summary_single)
+
+# Summarize using the multi-token (list) approach (VexPoli/distilbart-summarization-top-list)
+summary_list = summarize_with_keywords(
+    text_example,
+    model_type="list",
+    top_n_keywords=5
+)
+print("\nList model summary:\n", summary_list)
+</pre>
 ## Requirements
 
     Python 3.7+
