@@ -34,9 +34,11 @@ pip install git+https://github.com/ValeXpoli/keyword_summarizer.git
 ## Usage
 
 After installing, import and use the main function summarize_with_keywords from the keyword_summarizer package:
-from keyword_summarizer import summarize_with_keywords
 
-<pre>from keyword_summarizer import summarize_with_keywords
+
+<pre>
+   
+from keyword_summarizer import summarize_with_keywords
 
 text_example = (
     "Manchester City have been restricted to a net transfer spend of £49m. "
