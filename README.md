@@ -3,7 +3,7 @@
 **Keyword Summarizer** is a Python library that automates text summarization by:
 1. Extracting **keywords** with [KeyBERT](https://github.com/MaartenGr/KeyBERT).
 2. Enriching the input text with these keywords as special tokens.
-3. Summarizing the enriched text using **fine-tuned BART** models, such as:
+3. Summarizing the enriched text using **fine-tuned BART** models:
    - [`VexPoli/distilbart-summarization-top-single`](https://huggingface.co/VexPoli/distilbart-summarization-top-single)  
    - [`VexPoli/distilbart-summarization-top-list`](https://huggingface.co/VexPoli/distilbart-summarization-top-list)
 
